@@ -14,56 +14,97 @@
       padding: 0;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       padding: 2rem;
+      text-align: center;
     }
-    h1, h2 {
+    .main-title {
+      font-size: 3rem;
       color: #ff4444;
+      text-shadow: 0 0 10px #ff4444;
+      margin-bottom: 0.2em;
     }
-    a.cta {
+    .tagline {
+      font-size: 1.5rem;
+      color: #ffffff;
+      margin-bottom: 0.5em;
+    }
+    .highlight {
+      font-size: 1.25rem;
+      margin: 1rem 0;
+    }
+    .pulse {
+      animation: pulse 1.5s infinite;
+      color: #ff4444;
+      font-weight: bold;
+    }
+    @keyframes pulse {
+      0% { opacity: 1; }
+      50% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+    a.cta-button {
       background: #ff4444;
       color: #fff;
-      padding: 1rem 2rem;
+      padding: 1rem 2.5rem;
       display: inline-block;
       margin-top: 1rem;
       text-decoration: none;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       border-radius: 8px;
+      transition: transform 0.2s, box-shadow 0.3s;
+      box-shadow: 0 0 10px #ff4444;
+    }
+    a.cta-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ff4444;
     }
     section {
       margin-bottom: 3rem;
+      padding: 1rem;
+      background: #1a1a1a;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #ff6666;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li::before {
+      content: '✔';
+      margin-right: 8px;
+      color: #ff4444;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <section>
-      <h1>🕵️ MANHUNT</h1>
-      <p>Solve the case. Beat the clock. Win $500.</p>
-      <p><strong>6 puzzles. 1 hour. 1 killer to catch.</strong></p>
-      <p>Compete from your couch. Pajamas welcome.</p>
-      <a href="https://buy.stripe.com/YOUR-LINK-HERE" class="cta">Register Your Team – $15</a>
-    </section>
+    <h1 class="main-title">🕵️ MANHUNT</h1>
+    <p class="tagline">Live Online Murder Mystery Competition</p>
+    <p class="highlight">6 Clues. 1 Hour. 1 Killer. <span class="pulse">$500 on the line.</span></p>
+    <a href="https://buy.stripe.com/YOUR-LINK-HERE" class="cta-button">Join the Hunt – $15 Entry</a>
 
     <section>
       <h2>How It Works</h2>
       <ul>
-        <li>✅ Sign up your team</li>
-        <li>✅ Join the livestream at game time</li>
-        <li>✅ Solve timed puzzles and track clues</li>
-        <li>✅ Submit your case file before time runs out</li>
-        <li>✅ Win cash if you're the top team</li>
+        <li>Sign up your team</li>
+        <li>Join the livestream at game time</li>
+        <li>Solve timed puzzles and track clues</li>
+        <li>Submit your case file before time runs out</li>
+        <li>Win cash if you're the top team</li>
       </ul>
     </section>
 
     <section>
       <h2>What You’ll Need</h2>
       <ul>
-        <li>🧠 A teammate or go solo</li>
-        <li>💻 A laptop or tablet</li>
-        <li>⏳ 60 minutes of focus</li>
-        <li>🔐 A unique link (we send it after payment)</li>
+        <li>A teammate or go solo</li>
+        <li>A laptop or tablet</li>
+        <li>60 minutes of focus</li>
+        <li>A unique link (we send it after payment)</li>
       </ul>
     </section>
 
@@ -74,10 +115,3 @@
 
     <section>
       <h2>📅 Upcoming Game</h2>
-      <p><strong>Date:</strong> Saturday, May 4th, 2025<br>
-         <strong>Time:</strong> 7:00 PM CST<br>
-         <strong>Location:</strong> Online (link sent after payment)</p>
-    </section>
-  </div>
-</body>
-</html>
