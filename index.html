@@ -49,10 +49,14 @@
     section.bg-dark {
       background: #111;
     }
-    section.bg-image {
-      background-size: cover;
-      background-position: center;
-      color: #fff;
+    section.bg-image-3 {
+      background: url('manhunt-3.png') no-repeat center center / cover;
+    }
+    section.bg-image-6 {
+      background: url('manhunt-6.png') no-repeat center center / cover;
+    }
+    section.bg-image-7 {
+      background: url('manhunt-7.png') no-repeat center center / cover;
     }
     .testimonial {
       margin-bottom: 1.5rem;
@@ -78,24 +82,26 @@
     <img src="thunderhead-logo.png" alt="Thunderhead Entertainment Logo" class="logo-main">
     <img src="manhunt-logo.png" alt="Manhunt Logo" class="logo-tagline">
     <br>
-    <a href="https://buy.stripe.com/PLACEHOLDER" class="cta-button">Join the Hunt – $15 Entry</a>
+    <a href="https://buy.stripe.com/PLACEHOLDER" class="cta-button">Join the Hunt</a>
   </header>
 
   <section>
     <h2>A Murder Mystery Game Like You've Never Played Before</h2>
     <p>Manhunt is a live, online murder mystery competition where teams race against the clock to catch a killer. You’ll uncover clues, solve interactive puzzles, and piece together the crime—all in real time, from the comfort of your home.</p>
+    <a href="#how" class="cta-button">Find Out More</a>
     <img src="manhunt-photo-2.png" alt="Investigators on the scene" class="responsive-img">
   </section>
 
-  <section class="bg-dark">
+  <section id="how" class="bg-dark bg-image-3">
     <h2>Here’s How You Catch a Killer</h2>
     <p><strong>1. Register Your Team</strong><br> Pay $15 to claim your spot. You’ll receive a secret access link before game night.</p>
     <p><strong>2. Join the Livestream</strong><br> At game time, log in and watch as the murder unfolds. The countdown begins.</p>
     <p><strong>3. Solve 6 Timed Puzzles</strong><br> Clues drop every 10 minutes. Stay sharp and stay ahead.</p>
     <p><strong>4. Submit Your Case File</strong><br> Be the fastest team to crack the case and win $500.</p>
+    <a href="#footer" class="cta-button">See Next Game</a>
   </section>
 
-  <section>
+  <section class="bg-image-6">
     <h2>Real Detectives. Real Reactions.</h2>
     <div class="testimonial">
       <p>“We were yelling at the screen like it was a Netflix finale. So good.”</p>
@@ -111,9 +117,10 @@
     </div>
   </section>
 
-  <footer>
+  <footer id="footer" class="bg-image-7">
     <p>Questions? Contact us at <a href="mailto:info@manhuntmystery.com">info@manhuntmystery.com</a></p>
     <p>Follow us on social: @manhuntmystery</p>
+    <a href="https://buy.stripe.com/PLACEHOLDER" class="cta-button">Join the Hunt</a>
   </footer>
 </body>
 </html>
