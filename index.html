@@ -4,147 +4,116 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MANHUNT – Live Online Murder Mystery</title>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Anton', sans-serif;
+      font-family: 'Inter', sans-serif;
       background-color: #000;
       color: #fff;
+      line-height: 1.6;
     }
-    .section {
+    header {
+      background: linear-gradient(to bottom right, #000000, #1a1a1a);
       padding: 4rem 2rem;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+      text-align: center;
     }
-    .hero {
-      background-image: url('manhunt.png');
-      min-height: 100vh;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      text-shadow: 2px 2px #000;
-      background-size: cover;
+    header img.logo-main {
+      width: 300px;
+      max-width: 90vw;
     }
-    .logo-overlay-manhunt {
-      position: absolute;
-      left: 5%;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 90%;
-      max-width: 700px;
-      z-index: 2;
-    }
-    .logo-overlay-thunderhead {
-      position: absolute;
-      left: 5%;
-      top: 5%;
-      width: 150px;
-      z-index: 2;
-    }
-    .hero .content-box {
-      position: relative;
-      z-index: 3;
-      margin-bottom: 3rem;
+    header img.logo-tagline {
+      margin-top: 1rem;
+      width: 100%;
+      max-width: 600px;
     }
     .cta-button {
+      margin-top: 2rem;
       background: #ff4444;
       padding: 1rem 2rem;
       color: white;
-      font-size: 1.4rem;
+      font-size: 1.25rem;
       text-decoration: none;
       border-radius: 8px;
+      display: inline-block;
       box-shadow: 0 0 10px #ff4444;
     }
     .cta-button:hover {
       background: #ff2222;
     }
-    .section2 {
-      background-image: url('manhunt-2.png');
-    }
-    .section3 {
-      background-image: url('manhunt-3.png');
-    }
-    .section4 {
-      background-image: url('manhunt-6.png');
-    }
-    .section5 {
-      background-image: url('manhunt-7.png');
-    }
-    .content-box {
+    section {
+      padding: 4rem 2rem;
       max-width: 800px;
       margin: auto;
-      background: rgba(0,0,0,0.7);
-      padding: 2rem;
-      border-radius: 8px;
     }
-    .content-box img {
-      width: 100%;
+    section.bg-dark {
+      background: #111;
+    }
+    section.bg-image {
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+    .testimonial {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid #ff4444;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    img.responsive-img {
+      max-width: 100%;
       border-radius: 8px;
       margin-top: 1rem;
-    }
-    @media (max-width: 768px) {
-      .hero {
-        min-height: 90vh;
-        padding: 2rem 1rem;
-        background-position: center center;
-      }
-      .logo-overlay-manhunt {
-        width: 90%;
-        max-width: 90%;
-        top: 55%;
-      }
-      .logo-overlay-thunderhead {
-        width: 120px;
-      }
     }
   </style>
 </head>
 <body>
-  <div class="hero section">
-    <img src="thunderhead-logo.png" alt="Thunderhead Entertainment Logo" class="logo-overlay-thunderhead">
-    <img src="manhunt-logo.png" alt="Manhunt Logo" class="logo-overlay-manhunt">
-    <div class="content-box">
-      <a href="https://buy.stripe.com/PLACEHOLDER" class="cta-button">Join the Hunt – $15 Entry</a>
-    </div>
-  </div>
+  <header>
+    <img src="thunderhead-logo.png" alt="Thunderhead Entertainment Logo" class="logo-main">
+    <img src="manhunt-logo.png" alt="Manhunt Logo" class="logo-tagline">
+    <br>
+    <a href="https://buy.stripe.com/PLACEHOLDER" class="cta-button">Join the Hunt – $15 Entry</a>
+  </header>
 
-  <div class="section section2">
-    <div class="content-box">
-      <h2>A Murder Mystery Game Like You've Never Played Before</h2>
-      <p>Manhunt is a live, online murder mystery competition where every team races against the clock to catch a killer. You’ll uncover clues, solve interactive puzzles, and piece together a crime—all in real time, from the comfort of your home.</p>
-      <img src="manhunt-photo-2.png" alt="Investigators on the scene">
-    </div>
-  </div>
+  <section>
+    <h2>A Murder Mystery Game Like You've Never Played Before</h2>
+    <p>Manhunt is a live, online murder mystery competition where teams race against the clock to catch a killer. You’ll uncover clues, solve interactive puzzles, and piece together the crime—all in real time, from the comfort of your home.</p>
+    <img src="manhunt-photo-2.png" alt="Investigators on the scene" class="responsive-img">
+  </section>
 
-  <div class="section section3">
-    <div class="content-box">
-      <h2>Here’s How You Catch a Killer</h2>
-      <p><strong>1. Register Your Team</strong><br> Pay $15 to claim your spot. You’ll receive a secret access link before game night.</p>
-      <p><strong>2. Join the Livestream</strong><br> At game time, log in and watch as the murder unfolds. The countdown begins.</p>
-      <p><strong>3. Solve 6 Timed Puzzles</strong><br> Clues drop every 10 minutes. Stay sharp and stay ahead.</p>
-      <p><strong>4. Submit Your Case File</strong><br> Be the fastest team to crack the case and win $500.</p>
-    </div>
-  </div>
+  <section class="bg-dark">
+    <h2>Here’s How You Catch a Killer</h2>
+    <p><strong>1. Register Your Team</strong><br> Pay $15 to claim your spot. You’ll receive a secret access link before game night.</p>
+    <p><strong>2. Join the Livestream</strong><br> At game time, log in and watch as the murder unfolds. The countdown begins.</p>
+    <p><strong>3. Solve 6 Timed Puzzles</strong><br> Clues drop every 10 minutes. Stay sharp and stay ahead.</p>
+    <p><strong>4. Submit Your Case File</strong><br> Be the fastest team to crack the case and win $500.</p>
+  </section>
 
-  <div class="section section4">
-    <div class="content-box">
-      <h2>Real Detectives. Real Reactions.</h2>
-      <p>“We were yelling at the screen like it was a Netflix finale. So good.”<br><em>– Mia & Jordan, Austin TX</em></p>
-      <p>“Felt like I was living in a true crime show, but with cash on the line.”<br><em>– Aaron L., Chicago IL</em></p>
-      <p>“The puzzles were hard. The clues were clever. We’re already signed up again.”<br><em>– Tasha B., Brooklyn NY</em></p>
+  <section>
+    <h2>Real Detectives. Real Reactions.</h2>
+    <div class="testimonial">
+      <p>“We were yelling at the screen like it was a Netflix finale. So good.”</p>
+      <em>– Mia & Jordan, Austin TX</em>
     </div>
-  </div>
+    <div class="testimonial">
+      <p>“Felt like I was living in a true crime show, but with cash on the line.”</p>
+      <em>– Aaron L., Chicago IL</em>
+    </div>
+    <div class="testimonial">
+      <p>“The puzzles were hard. The clues were clever. We’re already signed up again.”</p>
+      <em>– Tasha B., Brooklyn NY</em>
+    </div>
+  </section>
 
-  <div class="section section5">
-    <div class="content-box">
-      <h2>Stay Connected</h2>
-      <p>Questions? Contact us at <a href="mailto:info@manhuntmystery.com">info@manhuntmystery.com</a></p>
-      <p>Follow us on social: @manhuntmystery</p>
-    </div>
-  </div>
+  <footer>
+    <p>Questions? Contact us at <a href="mailto:info@manhuntmystery.com">info@manhuntmystery.com</a></p>
+    <p>Follow us on social: @manhuntmystery</p>
+  </footer>
 </body>
 </html>
