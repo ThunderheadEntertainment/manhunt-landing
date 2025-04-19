@@ -5,176 +5,156 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MANHUNT – Live Online Murder Mystery</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
- <style>
-  body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #000;
-    color: #fff;
-    line-height: 1.6;
-  }
-
-  header {
-    background: url('MANHUNT.png') no-repeat center center / cover;
-    padding: 4rem 2rem;
-    text-align: center;
-    position: relative;
-  }
-
-  header::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 0;
-  }
-
-  header > * {
-    position: relative;
-    z-index: 1;
-  }
-
-  header img.logo-main {
-    width: 300px;
-    max-width: 90vw;
-  }
-
-  header img.logo-tagline {
-    margin-top: 1rem;
-    width: 100%;
-    max-width: 600px;
-  }
-
-  .cta-button {
-    margin-top: 2rem;
-    background: #ff4444;
-    padding: 1rem 2rem;
-    color: white;
-    font-size: 1.25rem;
-    text-decoration: none;
-    border-radius: 8px;
-    display: inline-block;
-    box-shadow: 0 0 10px #ff4444;
-  }
-
-  .cta-button:hover {
-    background: #ff2222;
-  }
-
-  section {
-    padding: 4rem 2rem;
-  }
-
-  .section-fullwidth {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  section.bg-dark {
-    background: #111;
-  }
-
-  section.bg-image-2 {
-    background: url('manhunt-9.png') no-repeat center center / cover;
-  }
-
-  section.bg-image-3 {
-    background: url('manhunt-10.png') no-repeat center center / cover;
-  }
-
-  section.bg-image-6 {
-    background: url('manhunt-6.png') no-repeat center center / cover;
-  }
-
-  section.bg-image-7 {
-    background: url('manhunt-7.png') no-repeat center center / cover;
-  }
-
-  .testimonial {
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-left: 4px solid #ff4444;
-  }
-
-  footer {
-    background: #111;
-    text-align: center;
-    padding: 2rem;
-    font-size: 0.9rem;
-  }
-
-  img.responsive-img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-top: 1rem;
-  }
-
-  .countdown {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    color: #ff9999;
-  }
-
-  /* Responsive header tweaks */
-  @media (max-width: 480px) {
-    header img.logo-main {
-      width: 200px;
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
     }
-    header img.logo-tagline {
+
+    header {
+      background: url('MANHUNT.png') no-repeat center center / cover;
+      padding: 4rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    header > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    header img.logo-main {
+      width: 300px;
       max-width: 90vw;
     }
-  }
 
-  /* Split Visual Section */
-  .split-visual {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    min-height: 500px;
-  }
-
-  .split-visual .left {
-    flex: 1 1 50%;
-    background: url('manhunt-10.png') no-repeat center center / cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    box-sizing: border-box;
-    position: relative;
-  }
-
-  .split-visual .left::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,0.5);
-    z-index: 0;
-  }
-
-  .split-visual .right {
-    flex: 1 1 50%;
-    padding: 3rem;
-    box-sizing: border-box;
-    background-color: rgba(0,0,0,0.85);
-  }
-
-  .split-visual .right > * {
-    position: relative;
-    z-index: 1;
-  }
-
-  @media (max-width: 768px) {
-    .split-visual {
-      flex-direction: column;
+    header img.logo-tagline {
+      margin-top: 1rem;
+      width: 100%;
+      max-width: 600px;
     }
-    .split-visual .left,
-    .split-visual .right {
-      flex: 1 1 100%;
+
+    .cta-button {
+      margin-top: 2rem;
+      background: #ff4444;
+      padding: 1rem 2rem;
+      color: white;
+      font-size: 1.25rem;
+      text-decoration: none;
+      border-radius: 8px;
+      display: inline-block;
+      box-shadow: 0 0 10px #ff4444;
     }
-  }
-</style>
+
+    .cta-button:hover {
+      background: #ff2222;
+    }
+
+    section {
+      padding: 4rem 2rem;
+    }
+
+    .section-fullwidth {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    section.bg-dark {
+      background: #111;
+    }
+
+    section.bg-image-2 {
+      background: url('manhunt-9.png') no-repeat center center / cover;
+    }
+
+    section.bg-image-3 {
+      background: url('manhunt-10.png') no-repeat center center / cover;
+    }
+
+    section.bg-image-6 {
+      background: url('manhunt-6.png') no-repeat center center / cover;
+    }
+
+    section.bg-image-7 {
+      background: url('manhunt-7.png') no-repeat center center / cover;
+    }
+
+    .testimonial {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid #ff4444;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    img.responsive-img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    .countdown {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #ff9999;
+    }
+
+    @media (max-width: 480px) {
+      header img.logo-main {
+        width: 200px;
+      }
+      header img.logo-tagline {
+        max-width: 90vw;
+      }
+    }
+
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .card {
+      background: rgba(0,0,0,0.6);
+      padding: 2rem;
+      border-radius: 10px;
+      flex: 1 1 250px;
+      max-width: 300px;
+      box-shadow: 0 0 10px rgba(255,68,68,0.2);
+      text-align: left;
+    }
+
+    .card h3 {
+      color: #ff4444;
+      margin-bottom: 0.5rem;
+    }
+
+    .highlight-block {
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 5px solid #ff4444;
+      padding: 2rem;
+      margin-top: 2rem;
+      border-radius: 10px;
+    }
+  </style>
   <script>
     function startCountdown() {
       const countdown = document.getElementById('countdown');
@@ -199,6 +179,10 @@
   <header>
     <img src="thunderhead-logo.png" alt="Thunderhead Entertainment Logo" class="logo-main">
     <img src="MANHUNT-logo.png" alt="Manhunt Logo" class="logo-tagline">
+    <p style="font-size: 1.25rem; margin-top: 1rem;">
+      An immersive true crime game.<br>
+      Built by a real interrogator. Played like a podcast. Solved by you.
+    </p>
     <div class="countdown" id="countdown"></div>
     <a href="https://buy.stripe.com/PLACEHOLDER" class="cta-button">Join the Hunt</a>
   </header>
@@ -206,59 +190,63 @@
   <section class="section-fullwidth bg-image-2">
     <div style="max-width: 800px; margin: auto;">
       <h2>WHAT IS MANHUNT?</h2>
-<h3>A true crime mystery, built by someone who’s lived it.</h3>
-<p>Manhunt is a live, online murder investigation — designed by a former military interrogator and corporate investigator with experience in combat zones, intelligence operations, and internal crime cases.</p>
-<p>You’ll follow the case like a true crime podcast. As the story unfolds, evidence is released in real time, and your team works to solve the mystery.</p>
-<p>Go solo or team up. Investigate, connect the clues, and build your case. Accuracy matters — and those who solve it best are rewarded.</p>
+      <h3>A true crime mystery, built by someone who’s lived it.</h3>
+      <p>Manhunt is a live, online murder investigation — designed by a former military interrogator and corporate investigator with experience in combat zones, intelligence operations, and internal crime cases.</p>
+      <p>You’ll follow the case like a true crime podcast. As the story unfolds, evidence is released in real time, and your team works to solve the mystery.</p>
+      <p>Go solo or team up. Investigate, connect the clues, and build your case. Accuracy matters — and those who solve it best are rewarded.</p>
     </div>
   </section>
 
-  <section id="how" class="section-fullwidth">
-  <div style="text-align: center; margin-bottom: 2rem;">
-    <h2>HOW IT WORKS</h2>
-    <p style="font-size: 1.2rem;">Investigate the mystery through a true crime narrative — then prove you’re the sharpest mind in the room.</p>
-  </div>
-
-  <div class="split-visual">
-    <div class="left"></div>
-    <div class="right">
-      <p><strong>1. REGISTER YOUR TEAM</strong><br>
-      Only $15 to get in the game. You’ll receive a secret access link via email before game night.</p>
-
-      <p><strong>2. JOIN THE LIVESTREAM</strong><br>
-      At game time, log in and watch as the story unfolds. The countdown begins.</p>
-
-      <p><strong>3. SOLVE THE MURDER</strong><br>
-      Clues drop every 10 minutes. Use logic, deduction, and a live Evidence Log to stay on the killer’s trail.</p>
-
-      <p><strong>4. SUBMIT YOUR CASE</strong><br>
-      Finish before the clock runs out. If you’re the most accurate team—you earn the bounty.</p>
-
-      <p><strong>🏆 REWARDS:</strong><br> $250 for 1st, $150 for 2nd, $50 for 3rd.</p>
-
-      <p><strong>🧠 Designed by a real-life interrogator.</strong><br>
-      Built by a former military and corporate investigator with expertise in lie detection, psychological tactics, and criminal behavior.</p>
-
-      <a href="#footer" class="cta-button">See Next Game</a>
+  <section id="how" class="section-fullwidth bg-image-3">
+    <div style="text-align: center; max-width: 900px; margin: auto;">
+      <h2>How It Works</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>1. Register</h3>
+          <p>Only $15 to join. You'll receive a secret access link before game night.</p>
+        </div>
+        <div class="card">
+          <h3>2. Join the Livestream</h3>
+          <p>At game time, tune into the show. It’s a true crime-style narration with live evidence drops.</p>
+        </div>
+        <div class="card">
+          <h3>3. Investigate</h3>
+          <p>Use clues, psychology, and deduction to piece together the truth. Work solo or with a teammate.</p>
+        </div>
+        <div class="card">
+          <h3>4. Solve the Case</h3>
+          <p>Submit your findings. The most accurate teams earn recognition and rewards.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="section-fullwidth bg-dark">
+    <div style="max-width: 800px; margin: auto;">
+      <h2>Behind the Mystery</h2>
+      <p>These aren’t just stories. They’re layered investigations designed by someone who’s interrogated real criminals, tracked down internal fraud, and taught psychological tactics to U.S. military intelligence officers.</p>
+      <div class="highlight-block">
+        <p><strong>I spent years in combat zones and corporate war rooms uncovering the truth.</strong><br>
+        Now, I build cases that challenge your logic, your instincts, and your ability to think like a professional investigator.</p>
+      </div>
+    </div>
+  </section>
 
   <section class="section-fullwidth bg-image-6">
     <div style="max-width: 800px; margin: auto;">
       <h2>WHY JOIN?</h2>
-<div class="testimonial">
-  <p><strong>Only the top minds make it through.</strong><br>
-  This isn’t random guessing — it’s deduction, detail, and discipline. You’ll need to think like an investigator, because the mystery won’t solve itself.</p>
-</div>
-<div class="testimonial">
-  <p><strong>Limited spots available.</strong><br>
-  Each game is capped to preserve immersion and fairness. When the list is full, it’s locked. Don’t wait.</p>
-</div>
-<div class="testimonial">
-  <p><strong>Recognition goes to the most accurate teams.</strong><br>
-  $250 to the top team. $150 and $50 to runners-up. But the real reward? Bragging rights for solving a mystery designed by a military-trained interrogator.</p>
-</div>
+      <div class="testimonial">
+        <p><strong>Only the top minds make it through.</strong><br>
+        This isn’t random guessing — it’s deduction, detail, and discipline. You’ll need to think like an investigator, because the mystery won’t solve itself.</p>
+      </div>
+      <div class="testimonial">
+        <p><strong>Limited spots available.</strong><br>
+        Each game is capped to preserve immersion and fairness. When the list is full, it’s locked. Don’t wait.</p>
+      </div>
+      <div class="testimonial">
+        <p><strong>Recognition goes to the most accurate teams.</strong><br>
+        $250 to the top team. $150 and $50 to runners-up. But the real reward? Bragging rights for solving a mystery designed by a military-trained interrogator.</p>
+      </div>
     </div>
   </section>
 
