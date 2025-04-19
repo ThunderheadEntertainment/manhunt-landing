@@ -131,6 +131,29 @@
     flex-direction: column;
   }
 }
+    .split-background {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
+  gap: 2rem;
+}
+
+.split-background .left,
+.split-background .right {
+  flex: 1 1 50%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.split-background .left {
+  background: url('manhunt-10.png') no-repeat center center / cover;
+}
+
+@media (max-width: 768px) {
+  .split-background {
+    flex-direction: column;
+  }
+}
   </style>
   <script>
     function startCountdown() {
@@ -177,28 +200,31 @@
       <p style="font-size: 1.2rem;">Investigate the mystery through a true crime narrative — then prove you’re the sharpest mind in the room.</p>
     </div>
 
-    <div class="split-section">
-      <div class="text">
-        <p><strong>1. REGISTER YOUR TEAM</strong><br>
-        Only $15 to get in the game. You’ll receive a secret access link via email before game night.</p>
+<div class="split-background">
+  <div class="left"></div>
+  <div class="right">
+    <h2>HOW IT WORKS</h2>
+    <p><strong>1. REGISTER YOUR TEAM</strong><br>
+    Only $15 to get in the game. You’ll receive a secret access link via email before game night.</p>
 
-        <p><strong>2. JOIN THE LIVESTREAM</strong><br>
-        At game time, log in and watch as the story unfolds. The countdown begins.</p>
+    <p><strong>2. JOIN THE LIVESTREAM</strong><br>
+    At game time, log in and watch as the story unfolds. The countdown begins.</p>
 
-        <p><strong>3. SOLVE THE MURDER</strong><br>
-        Clues drop every 10 minutes. Use logic, deduction, and a live Evidence Log to stay on the killer’s trail.</p>
+    <p><strong>3. SOLVE THE MURDER</strong><br>
+    Clues drop every 10 minutes. Use logic, deduction, and a live Evidence Log to stay on the killer’s trail.</p>
 
-        <p><strong>4. SUBMIT YOUR CASE</strong><br>
-        Finish before the clock runs out. If you’re the most accurate team—you earn the bounty.</p>
+    <p><strong>4. SUBMIT YOUR CASE</strong><br>
+    Finish before the clock runs out. If you’re the most accurate team—you earn the bounty.</p>
 
-        <p><strong>🏆 REWARDS:</strong><br> $250 for 1st, $150 for 2nd, $50 for 3rd.</p>
+    <p><strong>🏆 REWARDS:</strong><br> $250 for 1st, $150 for 2nd, $50 for 3rd.</p>
 
-        <p><strong>🧠 Designed by a real-life interrogator.</strong><br>
-        Built by a former military and corporate investigator with expertise in lie detection, psychological tactics, and criminal behavior.</p>
+    <p><strong>🧠 Designed by a real-life interrogator.</strong><br>
+    Built by a former military and corporate investigator with expertise in lie detection, psychological tactics, and criminal behavior.</p>
 
-        <a href="#footer" class="cta-button">See Next Game</a>
-      </div>
-    </div>
+    <a href="#footer" class="cta-button">See Next Game</a>
+  </div>
+</div>
+
   </div>
 </section>
 
