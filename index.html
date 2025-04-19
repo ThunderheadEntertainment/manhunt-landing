@@ -5,156 +5,176 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MANHUNT – Live Online Murder Mystery</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #000;
-      color: #fff;
-      line-height: 1.6;
-    }
-    header {
-      background: url('MANHUNT.png') no-repeat center center / cover;
-      padding: 4rem 2rem;
-      text-align: center;
-      position: relative;
-    }
-    header::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: 0;
-    }
-    header > * {
-      position: relative;
-      z-index: 1;
-    }
+ <style>
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+  }
+
+  header {
+    background: url('MANHUNT.png') no-repeat center center / cover;
+    padding: 4rem 2rem;
+    text-align: center;
+    position: relative;
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+  }
+
+  header > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  header img.logo-main {
+    width: 300px;
+    max-width: 90vw;
+  }
+
+  header img.logo-tagline {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .cta-button {
+    margin-top: 2rem;
+    background: #ff4444;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 1.25rem;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 0 10px #ff4444;
+  }
+
+  .cta-button:hover {
+    background: #ff2222;
+  }
+
+  section {
+    padding: 4rem 2rem;
+  }
+
+  .section-fullwidth {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  section.bg-dark {
+    background: #111;
+  }
+
+  section.bg-image-2 {
+    background: url('manhunt-9.png') no-repeat center center / cover;
+  }
+
+  section.bg-image-3 {
+    background: url('manhunt-10.png') no-repeat center center / cover;
+  }
+
+  section.bg-image-6 {
+    background: url('manhunt-6.png') no-repeat center center / cover;
+  }
+
+  section.bg-image-7 {
+    background: url('manhunt-7.png') no-repeat center center / cover;
+  }
+
+  .testimonial {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid #ff4444;
+  }
+
+  footer {
+    background: #111;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+  }
+
+  img.responsive-img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+
+  .countdown {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #ff9999;
+  }
+
+  /* Responsive header tweaks */
+  @media (max-width: 480px) {
     header img.logo-main {
-      width: 300px;
-      max-width: 90vw;
+      width: 200px;
     }
     header img.logo-tagline {
-      margin-top: 1rem;
-      width: 100%;
-      max-width: 600px;
+      max-width: 90vw;
     }
-    .cta-button {
-      margin-top: 2rem;
-      background: #ff4444;
-      padding: 1rem 2rem;
-      color: white;
-      font-size: 1.25rem;
-      text-decoration: none;
-      border-radius: 8px;
-      display: inline-block;
-      box-shadow: 0 0 10px #ff4444;
-    }
-    .cta-button:hover {
-      background: #ff2222;
-    }
-    section {
-      padding: 4rem 2rem;
-    }
-    .section-fullwidth {
-      width: 100%;
-      max-width: 100%;
-    }
-    section.bg-dark {
-      background: #111;
-    }
-    section.bg-image-2 {
-      background: url('manhunt-9.png') no-repeat center center / cover;
-    }
-    section.bg-image-3 {
-      background: url('manhunt-10.png') no-repeat center center / cover;
-    }
-    section.bg-image-6 {
-      background: url('manhunt-6.png') no-repeat center center / cover;
-    }
-    section.bg-image-7 {
-      background: url('manhunt-7.png') no-repeat center center / cover;
-    }
-    .testimonial {
-      margin-bottom: 1.5rem;
-      padding: 1rem;
-      background: rgba(255, 255, 255, 0.05);
-      border-left: 4px solid #ff4444;
-    }
-    footer {
-      background: #111;
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-    }
-    img.responsive-img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 1rem;
-    }
-    .countdown {
-      margin-top: 1rem;
-      font-size: 1.2rem;
-      color: #ff9999;
-    }
-    @media (max-width: 480px) {
-      header img.logo-main {
-        width: 200px;
-      }
-      header img.logo-tagline {
-        max-width: 90vw;
-      }
-    }
-    .split-section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-}
-
-.split-section .text {
-  flex: 1 1 400px;
-}
-
-.split-section .image {
-  flex: 1 1 400px;
-  text-align: center;
-}
-
-.split-section img {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-@media (max-width: 768px) {
-  .split-section {
-    flex-direction: column;
   }
-}
-    .split-background {
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 500px;
-  gap: 2rem;
-}
 
-.split-background .left,
-.split-background .right {
-  flex: 1 1 50%;
-  padding: 2rem;
-  box-sizing: border-box;
-}
-
-.split-background .left {
-  background: url('manhunt-10.png') no-repeat center center / cover;
-}
-
-@media (max-width: 768px) {
-  .split-background {
-    flex-direction: column;
+  /* Split Visual Section */
+  .split-visual {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 500px;
   }
-}
-  </style>
+
+  .split-visual .left {
+    flex: 1 1 50%;
+    background: url('manhunt-10.png') no-repeat center center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .split-visual .left::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 0;
+  }
+
+  .split-visual .right {
+    flex: 1 1 50%;
+    padding: 3rem;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.85);
+  }
+
+  .split-visual .right > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (max-width: 768px) {
+    .split-visual {
+      flex-direction: column;
+    }
+    .split-visual .left,
+    .split-visual .right {
+      flex: 1 1 100%;
+    }
+  }
+</style>
   <script>
     function startCountdown() {
       const countdown = document.getElementById('countdown');
@@ -193,38 +213,34 @@
     </div>
   </section>
 
-  <section id="how" class="section-fullwidth bg-image-3">
-  <div style="max-width: 1100px; margin: auto;">
-    <div style="text-align: center; margin-bottom: 2rem;">
-      <h2>HOW IT WORKS</h2>
-      <p style="font-size: 1.2rem;">Investigate the mystery through a true crime narrative — then prove you’re the sharpest mind in the room.</p>
-    </div>
-
-<div class="split-background">
-  <div class="left"></div>
-  <div class="right">
+  <section id="how" class="section-fullwidth">
+  <div style="text-align: center; margin-bottom: 2rem;">
     <h2>HOW IT WORKS</h2>
-    <p><strong>1. REGISTER YOUR TEAM</strong><br>
-    Only $15 to get in the game. You’ll receive a secret access link via email before game night.</p>
-
-    <p><strong>2. JOIN THE LIVESTREAM</strong><br>
-    At game time, log in and watch as the story unfolds. The countdown begins.</p>
-
-    <p><strong>3. SOLVE THE MURDER</strong><br>
-    Clues drop every 10 minutes. Use logic, deduction, and a live Evidence Log to stay on the killer’s trail.</p>
-
-    <p><strong>4. SUBMIT YOUR CASE</strong><br>
-    Finish before the clock runs out. If you’re the most accurate team—you earn the bounty.</p>
-
-    <p><strong>🏆 REWARDS:</strong><br> $250 for 1st, $150 for 2nd, $50 for 3rd.</p>
-
-    <p><strong>🧠 Designed by a real-life interrogator.</strong><br>
-    Built by a former military and corporate investigator with expertise in lie detection, psychological tactics, and criminal behavior.</p>
-
-    <a href="#footer" class="cta-button">See Next Game</a>
+    <p style="font-size: 1.2rem;">Investigate the mystery through a true crime narrative — then prove you’re the sharpest mind in the room.</p>
   </div>
-</div>
 
+  <div class="split-visual">
+    <div class="left"></div>
+    <div class="right">
+      <p><strong>1. REGISTER YOUR TEAM</strong><br>
+      Only $15 to get in the game. You’ll receive a secret access link via email before game night.</p>
+
+      <p><strong>2. JOIN THE LIVESTREAM</strong><br>
+      At game time, log in and watch as the story unfolds. The countdown begins.</p>
+
+      <p><strong>3. SOLVE THE MURDER</strong><br>
+      Clues drop every 10 minutes. Use logic, deduction, and a live Evidence Log to stay on the killer’s trail.</p>
+
+      <p><strong>4. SUBMIT YOUR CASE</strong><br>
+      Finish before the clock runs out. If you’re the most accurate team—you earn the bounty.</p>
+
+      <p><strong>🏆 REWARDS:</strong><br> $250 for 1st, $150 for 2nd, $50 for 3rd.</p>
+
+      <p><strong>🧠 Designed by a real-life interrogator.</strong><br>
+      Built by a former military and corporate investigator with expertise in lie detection, psychological tactics, and criminal behavior.</p>
+
+      <a href="#footer" class="cta-button">See Next Game</a>
+    </div>
   </div>
 </section>
 
