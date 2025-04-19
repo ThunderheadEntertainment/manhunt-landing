@@ -105,6 +105,32 @@
         max-width: 90vw;
       }
     }
+    .split-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.split-section .text {
+  flex: 1 1 400px;
+}
+
+.split-section .image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.split-section img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+@media (max-width: 768px) {
+  .split-section {
+    flex-direction: column;
+  }
+}
   </style>
   <script>
     function startCountdown() {
@@ -137,29 +163,55 @@
   <section class="section-fullwidth bg-image-2">
     <div style="max-width: 800px; margin: auto;">
       <h2>WHAT IS MANHUNT?</h2>
-      <h3>The only live online murder mystery competition where solving the case could earn you CASH</h3>
-      <p>All in real time, from the comfort of your home. Compete solo or with a teammate. The fastest, sharpest minds win the cash.</p>
+<h3>A true crime mystery, built by someone who’s lived it.</h3>
+<p>Manhunt is a live, online murder investigation — designed by a former military interrogator and corporate investigator with experience in combat zones, intelligence operations, and internal crime cases.</p>
+<p>You’ll follow the case like a true crime podcast. As the story unfolds, evidence is released in real time, and your team works to solve the mystery.</p>
+<p>Go solo or team up. Investigate, connect the clues, and build your case. Accuracy matters — and those who solve it best are rewarded.</p>
     </div>
   </section>
 
-  <section id="how" class="section-fullwidth bg-dark bg-image-3">
-    <div style="max-width: 800px; margin: auto;">
+  <section id="how" class="section-fullwidth bg-image-3">
+  <div class="split-section" style="max-width: 1100px; margin: auto;">
+    <div class="text">
       <h2>HOW IT WORKS</h2>
-      <p><strong>1. REGISTER YOUR TEAM</strong><br> Only $15 to get in the game. You’ll receive a secret access link via email before game night.</p>
-      <p><strong>2. JOIN THE LIVESTREAM</strong><br> At game time, log in and watch as the story unfolds. The countdown begins.</p>
-      <p><strong>3. SOLVE THE MURDER</strong><br> Clues drop every 10 minutes. Use logic, deduction, and a live Evidence Log to stay on the killer’s trail.</p>
-      <p><strong>4. SUBMIT YOUR CASE</strong><br> Finish before the clock runs out. If you’re the most accurate team—you earn the bounty.</p>
+
+      <p><strong>1. REGISTER YOUR TEAM</strong><br>
+      Only $15 to get in the game. You’ll receive a secret access link via email before game night.</p>
+
+      <p><strong>2. JOIN THE LIVESTREAM</strong><br>
+      At game time, log in and watch as the story unfolds. The countdown begins.</p>
+
+      <p><strong>3. SOLVE THE MURDER</strong><br>
+      Clues drop every 10 minutes. Use logic, deduction, and a live Evidence Log to stay on the killer’s trail.</p>
+
+      <p><strong>4. SUBMIT YOUR CASE</strong><br>
+      Finish before the clock runs out. If you’re the most accurate team—you earn the bounty.</p>
+
+      <p><strong>🏆 REWARDS:</strong><br> $250 for 1st, $150 for 2nd, $50 for 3rd.</p>
+
+      <p><strong>🧠 Designed by a real-life interrogator.</strong><br>
+      Built by a former military and corporate investigator with expertise in lie detection, psychological tactics, and criminal behavior.</p>
+
       <a href="#footer" class="cta-button">See Next Game</a>
     </div>
-  </section>
+  </div>
+</section>
 
   <section class="section-fullwidth bg-image-6">
     <div style="max-width: 800px; margin: auto;">
-      <h2>Real Detectives. Real Reactions.</h2>
-      <div class="testimonial">
-      <p><strong>PRIZE TIERS:</strong><br> $250 for 1st place, $150 for 2nd, and $50 for 3rd.</p>
-      <p><strong>Built by a real-life interrogator.</strong><br> Each mystery is crafted by a professional trained in lie detection, psychological tactics, and criminal behavior.</p>
-      </div>
+      <h2>WHY JOIN?</h2>
+<div class="testimonial">
+  <p><strong>Only the top minds make it through.</strong><br>
+  This isn’t random guessing — it’s deduction, detail, and discipline. You’ll need to think like an investigator, because the mystery won’t solve itself.</p>
+</div>
+<div class="testimonial">
+  <p><strong>Limited spots available.</strong><br>
+  Each game is capped to preserve immersion and fairness. When the list is full, it’s locked. Don’t wait.</p>
+</div>
+<div class="testimonial">
+  <p><strong>Recognition goes to the most accurate teams.</strong><br>
+  $250 to the top team. $150 and $50 to runners-up. But the real reward? Bragging rights for solving a mystery designed by a military-trained interrogator.</p>
+</div>
     </div>
   </section>
 
