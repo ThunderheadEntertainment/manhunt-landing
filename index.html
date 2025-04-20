@@ -173,6 +173,35 @@
 .sticky-cta:hover {
   background: #ff2222;
 }
+    .profile-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  padding: 4rem 2rem;
+}
+
+.profile-image {
+  flex: 1 1 300px;
+  max-width: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 68, 68, 0.4);
+}
+
+.profile-image img {
+  width: 100%;
+  display: block;
+}
+
+.profile-text {
+  flex: 1 1 500px;
+  max-width: 600px;
+}
+
   </style>
   <script>
     function startCountdown() {
@@ -242,16 +271,21 @@
     </div>
   </section>
 
-  <section class="section-fullwidth bg-dark">
-    <div style="max-width: 800px; margin: auto;">
-      <h2>Behind the Mystery</h2>
-      <p>These aren’t just stories. They’re layered investigations designed by someone who’s interrogated real criminals, tracked down internal fraud, and taught psychological tactics to U.S. military intelligence officers.</p>
-      <div class="highlight-block">
-        <p><strong>I spent years in combat zones and corporate war rooms uncovering the truth.</strong><br>
-        Now, I build cases that challenge your logic, your instincts, and your ability to think like a professional investigator.</p>
-      </div>
+ <section class="section-fullwidth bg-dark">
+  <h2 style="text-align: center;">Meet Your Game Architect</h2>
+  <div class="profile-section">
+    <div class="profile-image">
+      <img src="casefile-blur.jpg" alt="Case File Folder">
     </div>
-  </section>
+    <div class="profile-text">
+      <p>I used to interrogate people for a living — in combat zones, intelligence briefings, as an instructor, and behind closed doors inside billion-dollar companies. Over the years, I learned to navigate the clues people leave behind, how they lie, and most importantly — how they break.</p>
+
+      <p>Mahunt is designed to pull you into that same web of questions, hunches, and uneasy truths. You don’t need a degree in criminal justice. You just need curiosity, a sharp eye, and the guts to trust your instincts.</p>
+
+      <p><strong>This isn’t just a game. It’s a world of intrigue, deception, and murder, and it's all based on real-life experience.</strong></p>
+    </div>
+  </div>
+</section>
 
   <section class="section-fullwidth bg-image-6">
     <div style="max-width: 800px; margin: auto;">
